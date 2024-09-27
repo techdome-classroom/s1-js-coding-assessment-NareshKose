@@ -25,14 +25,6 @@ const decodeTheRing = function (s, p) {
   
       
       return helper(0, 0);
-
-  
-  // Example usage:
-  
-  console.log(isMatch("aa", "a"));    // false
-  console.log(isMatch("aa", "*"));    // true
-  console.log(isMatch("cb", "?a"));   // false
-  console.log(isMatch("abc", "a*c")); // true
   
 
   };
