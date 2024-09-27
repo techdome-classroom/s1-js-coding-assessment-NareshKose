@@ -11,12 +11,12 @@ const decodeTheRing = function (s, p) {
   
           if (p[j] === '*') {
               
-              return helperFunctionRecursive(i, j + 1) || (i < s.length && helper(i + 1, j));
+              return helper(i, j + 1) || (i < s.length && helper(i + 1, j));
           }
   
           if (i < s.length && (p[j] === '?' || p[j] === s[i])) {
              
-              return helperFunctionRecursive(i + 1, j + 1);
+              return helper(i + 1, j + 1);
           }
   
           
