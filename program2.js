@@ -15,7 +15,7 @@ const decodeTheRing = function (s, p) {
           }
   
           if (i < s.length && (p[j] === '?' || p[j] === s[i])) {
-              // If the current characters match or if it's a '?', move both pointers forward
+             
               return helper(i + 1, j + 1);
           }
   
