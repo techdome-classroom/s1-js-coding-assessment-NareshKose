@@ -5,7 +5,7 @@ const decodeTheRing = function (s, p) {
       const helper = (i, j) => {
           // Base cases
           if (j === p.length) {
-              // If we have consumed the entire pattern, the message must also be fully consumed
+              
               return i === s.length;
           }
   
