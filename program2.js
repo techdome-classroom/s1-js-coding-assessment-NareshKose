@@ -1,7 +1,7 @@
 const decodeTheRing = function (s, p) {
 
     // write your code here
-    function isMatch(message, pattern) {
+
       const helper = (i, j) => {
           // Base cases
           if (j === pattern.length) {
