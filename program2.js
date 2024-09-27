@@ -2,7 +2,7 @@ const decodeTheRing = function (s, p) {
 
     // write your code here
 
-      const helperFunctionRecursive = (i, j) => {
+      const helperFunctionRec = (i, j) => {
           
           if (j === p.length) {
               
