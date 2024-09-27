@@ -3,7 +3,7 @@ const decodeTheRing = function (s, p) {
     // write your code here
 
       const helper = (i, j) => {
-          // Base cases
+          
           if (j === p.length) {
               
               return i === s.length;
