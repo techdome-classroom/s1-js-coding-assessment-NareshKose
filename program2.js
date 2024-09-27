@@ -4,17 +4,17 @@ const decodeTheRing = function (s, p) {
 
       const helper = (i, j) => {
           // Base cases
-          if (j === pattern.length) {
+          if (j === p.length) {
               // If we have consumed the entire pattern, the message must also be fully consumed
               return i === message.length;
           }
   
-          if (pattern[j] === '*') {
+          if (p[j] === '*') {
               // Try to match '*' with zero characters or with one or more characters
               return helper(i, j + 1) || (i < message.length && helper(i + 1, j));
           }
   
-          if (i < message.length && (pattern[j] === '?' || pattern[j] === message[i])) {
+          if (i < message.length && (p[j] === '?' || p[j] === message[i])) {
               // If the current characters match or if it's a '?', move both pointers forward
               return helper(i + 1, j + 1);
           }
