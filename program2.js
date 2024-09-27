@@ -19,7 +19,7 @@ const decodeTheRing = function (s, p) {
               return helper(i + 1, j + 1);
           }
   
-          // No match found
+          
           return false;
       };
   
