@@ -16,7 +16,7 @@ const decodeTheRing = function (s, p) {
   
           if (i < s.length && (p[j] === '?' || p[j] === s[i])) {
              
-              return helper(i + 1, j + 1);
+              return helperFunctionRecursive(i + 1, j + 1);
           }
   
           
