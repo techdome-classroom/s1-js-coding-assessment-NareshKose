@@ -10,7 +10,7 @@ const decodeTheRing = function (s, p) {
           }
   
           if (p[j] === '*') {
-              // Try to match '*' with zero characters or with one or more characters
+              
               return helper(i, j + 1) || (i < s.length && helper(i + 1, j));
           }
   
