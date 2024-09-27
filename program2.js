@@ -23,7 +23,7 @@ const decodeTheRing = function (s, p) {
           return false;
       };
   
-      // Start recursion with both indices at 0
+      
       return helper(0, 0);
   }
   
