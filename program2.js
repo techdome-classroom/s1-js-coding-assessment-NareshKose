@@ -2,7 +2,7 @@ const decodeTheRing = function (s, p) {
 
     // write your code here
 
-      const helper = (i, j) => {
+      const helperFunction = (i, j) => {
           
           if (j === p.length) {
               
