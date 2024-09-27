@@ -11,7 +11,7 @@ const decodeTheRing = function (s, p) {
   
           if (p[j] === '*') {
               
-              return helper(i, j + 1) || (i < s.length && helper(i + 1, j));
+              return helperFunctionRec(i, j + 1) || (i < s.length && helper(i + 1, j));
           }
   
           if (i < s.length && (p[j] === '?' || p[j] === s[i])) {
